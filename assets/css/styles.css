@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 230; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 142; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -113,7 +113,8 @@ html {
 body {
     margin: 0 0 var(--header-height) 0;
     font-family: var(--body-font);
-    background-color: var(--normal-font-size);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
     color: var(--text-color)
 }
 
@@ -232,7 +233,7 @@ img {
     font-weight: var(--font-medium);
 }
 
-.nav__link {
+.nav__link:hover {
     color: var(--first-color)
 }
 
